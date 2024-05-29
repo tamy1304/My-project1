@@ -933,6 +933,9 @@ MonoBehaviour:
   fondo: {fileID: 1970361344}
   piedra1: {fileID: 9023723175109002479, guid: 0c330eddd12bb2a40a5fa6ad3c687b55, type: 3}
   piedra2: {fileID: 6197334953497611251, guid: 36faf048791934c478f1c372df691608, type: 3}
+  fuego: {fileID: 6019002826387346613, guid: 680023af38d440e48b0c92b2d2d5f3f5, type: 3}
+  hielo: {fileID: 6812498242643204762, guid: 69884f6f17d00cc4aa6eaeadbc10bafa, type: 3}
+  arbusto: {fileID: 2380880373027175120, guid: c5eec38eebe18ef4b83bc28ee2fcb453, type: 3}
   gameOver: 0
   start: 0
   columnas: []
@@ -1276,7 +1279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e5c00aad336454191a8e9cb5301bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuerzaSalto: 300
+  fuerzaSalto: 400
   stopSalto: 0
   gameManager: {fileID: 1380394288}
 --- !u!50 &1897305508
