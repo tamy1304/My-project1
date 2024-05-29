@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public Renderer fondo;
     public GameObject piedra1;
     public GameObject piedra2;
+    public GameObject fuego;
+    public GameObject hielo;
+    public GameObject arbusto;
     public bool gameOver = false;
     public bool start = false;
     public List<GameObject> columnas;
@@ -27,7 +30,10 @@ public class GameManager : MonoBehaviour
         }
 
         obstaculos.Add(Instantiate(piedra1, new Vector2(14, -2), Quaternion.identity));
-        obstaculos.Add(Instantiate(piedra2, new Vector2(14, -2), Quaternion.identity));
+        obstaculos.Add(Instantiate(piedra2, new Vector2(20, -2), Quaternion.identity));
+        obstaculos.Add(Instantiate(fuego, new Vector2(30, -2), Quaternion.identity));
+        obstaculos.Add(Instantiate(hielo, new Vector2(40, -2), Quaternion.identity));
+        obstaculos.Add(Instantiate(arbusto, new Vector2(31, -2), Quaternion.identity));
     }
 
     // Update is called once per frame
@@ -68,7 +74,7 @@ public class GameManager : MonoBehaviour
             {
                 if (obstaculos[i].transform.position.x <= -10)
                 {
-                    float randomObs = Random.Range(11, 18);
+                    float randomObs = Random.Range(11, 25);
                     obstaculos[i].transform.position = new Vector3(randomObs, -2, 0);
                 }
                 obstaculos[i].transform.position = obstaculos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * velocidad;
